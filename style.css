@@ -255,6 +255,7 @@ body{
     display: flex;
     justify-content: space-between;
     margin-top:37.5px;
+    align-items: center;
 }
 
 .popular-card{
@@ -278,9 +279,7 @@ body{
     font-size: 14px;
 }
 
-.arrows{
-    
-}
+
 
 
 
