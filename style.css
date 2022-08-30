@@ -2,11 +2,16 @@ body{
     margin: 0;
     font-family: 'Roboto';
     width: 100%;
+    position: relative;
+    overflow-y: none;
+}
+
+button{
+    cursor: pointer;
 }
 
 #JTGeats{
     overflow-y: auto;
-    
 }
 
 #landingsection{
@@ -39,9 +44,25 @@ body{
     margin: 28px 40px;
 }
 
+#cart-icon{
+    margin: 0 35.17px;
+    position: relative;
+}
 
-.right img{
-    margin-right: 35.17px;
+#cart-icon::after{
+    content: "";
+    display: inline;
+    width: 7px;
+    height: 7px;
+    background-color: #F3BA00;
+    position: absolute;
+    border-radius: 50%;
+    right: 0px;
+    top: 5px;
+}
+
+.right{
+    display: flex;
 }
 
 #landing{
@@ -105,11 +126,10 @@ body{
 #kitchen-section{
     display: flex;
     background-color: #F2F2F2;
-    padding: 105px 130px;
+    padding-top:105px;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    border: 2px solid khaki;
 }
 
 #menu{
@@ -120,13 +140,13 @@ body{
 #kitchen{
     font-size: 40px;
     font-weight: 800 ;
-    margin-left:27px;
+    margin-left: 100px;
 }
 
 #btn-grp{
     display: flex;
     flex-direction: row;
-    margin-left:27px;
+    margin-left: 100px;
 }
 
 #btn-grp button{
@@ -154,13 +174,13 @@ body{
     flex-wrap:wrap;
     justify-content: center;
     
+    
 }
 
 .card{
     display: flex;
     width: fit-content;
-    margin-right: 24px;
-    margin-bottom: 39px;
+    margin: 0 24px 39px;
     position: relative;
     flex-direction: column;
     
@@ -187,6 +207,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    
 }
 
 .pizza-details{
@@ -261,8 +282,7 @@ body{
 .popular-card{
     display: none;
     width: fit-content;
-    margin-right: 24px;
-    margin-bottom: 39px;
+    margin: 0 24px 39px;
     position: relative;
     flex-direction: column;
     
@@ -279,7 +299,10 @@ body{
     font-size: 14px;
 }
 
-
+#arrow-cards{
+    display: flex;
+    align-items: center;
+}
 
 
 
@@ -301,6 +324,7 @@ body{
     padding: 14px 52px;
     border-radius: 10px;
     border: none;
+    margin-bottom: 81px;
 }
 
 #service-section{
@@ -442,29 +466,32 @@ body{
 
 #cart-modal-container{
     display: flex;
+    top: 0;
     justify-content: center;
+    align-items: center;
     width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    background-color: rgba(0,0,0,0.4);
+    height: 100vh;
 }
 
 #cart-modal{
-    position: absolute;
-    top: 15%;
     background-color: white;
     border-radius: 10px;
     width: 80%;
-    z-index: 999;
-    display: none;
-    height: 1154px;
+    height: 80%;
     justify-content: center;
     align-items: center;
-    
-
 }
 
 #cart-modal-content{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 #cart-modal-content p{
@@ -491,31 +518,34 @@ body{
 }
 
 #request-modal-container{
-    display: flex;
     justify-content: center;
     width: 100%;
+    height: 100vh;
+    position: absolute;
+    align-items: center;
+    top: 0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 999;
+    display: none;
 }
 
 #request-modal{
     position: absolute;
-    top: 15%;
+    top: 12%;
     background-color: #F7F8FA;
     border-radius: 10px;
     width: 90%;
+    height: 85%;
     z-index: 999;
-    display: none;
-    height: 647px;
-
     justify-content: center;
     align-items: center;
-    
-
 }
 
 #request-modal-content{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 37px;
     
 }
 
@@ -571,5 +601,11 @@ body{
     font-size: 40px;
     font-weight: 800;
 }
+
+
+#instagram{
+    padding: 0 35.17px;
+}
+
 
 
