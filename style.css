@@ -1,10 +1,12 @@
 body{
     margin: 0;
     font-family: 'Roboto';
+    width: 100%;
 }
 
 #JTGeats{
     overflow-y: auto;
+    
 }
 
 #landingsection{
@@ -106,17 +108,25 @@ body{
     padding: 105px 130px;
     justify-content: space-around;
     flex-direction: column;
+    align-items: center;
+    border: 2px solid khaki;
+}
+
+#menu{
+    display: flex;
+    flex-direction: column;
 }
 
 #kitchen{
     font-size: 40px;
     font-weight: 800 ;
+    margin-left:27px;
 }
 
 #btn-grp{
     display: flex;
     flex-direction: row;
-    
+    margin-left:27px;
 }
 
 #btn-grp button{
@@ -142,6 +152,7 @@ body{
     margin-top:37px;
     display: flex;
     flex-wrap:wrap;
+    justify-content: center;
     
 }
 
@@ -246,7 +257,15 @@ body{
     margin-top:37.5px;
 }
 
-
+.popular-card{
+    display: none;
+    width: fit-content;
+    margin-right: 24px;
+    margin-bottom: 39px;
+    position: relative;
+    flex-direction: column;
+    
+}
 
 .cart-quantity{
     display: flex;
@@ -260,7 +279,6 @@ body{
 }
 
 .arrows{
-    max-height: ;
     
 }
 
@@ -275,7 +293,7 @@ body{
     justify-content: center;
 }
 
-#request-dish button{
+#request-btn{
     background-color: #1AC073;
     color: white;
     font-size: 16px;
@@ -314,15 +332,33 @@ body{
     color: #737373;
 }
 
-video{
+#video{
     width:877px; 
     height:442px;
     z-index: 1;
+    position:relative;
 }
 
 #food-video{
     display: flex;
     justify-content: center;
+    
+}
+
+#backdrop{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#backdrop:hover{
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 #green-bg{
@@ -396,7 +432,7 @@ video{
 
 #footer{
     background-color: #1AC073;
-    padding: 26px 146px;
+    padding: 38px 143px 48px 129px;
 
 }
 
@@ -404,3 +440,137 @@ video{
     color: white;
     
 }
+
+#cart-modal-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#cart-modal{
+    position: absolute;
+    top: 15%;
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    z-index: 999;
+    display: none;
+    height: 1154px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+#cart-modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cart-modal-content p{
+    color: #AAA7A7;
+    margin-top: 0;
+}
+
+#back-to-menu{
+    background-color: #1AC073;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Roboto';
+    padding: 19px 57px;
+    border-radius: 10px;
+    border: none;
+    margin: 55px;
+}
+
+#cart{
+    width: 197px;
+    height: 225px;
+    filter: invert(48%) brightness(145%) contrast(150%);
+}
+
+#request-modal-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#request-modal{
+    position: absolute;
+    top: 15%;
+    background-color: #F7F8FA;
+    border-radius: 10px;
+    width: 90%;
+    z-index: 999;
+    display: none;
+    height: 647px;
+
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+#request-modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#request-modal-content form{
+    display: flex;
+    width: 1127px;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+#form-inputs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#request-modal-content form input{
+    font-size: 14px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F2F2F2;
+    font-family: 'roboto';
+    margin: 1px;
+    margin-bottom: 37px;
+}
+
+#request-modal-content button{
+    background-color: white;
+    border: 2px solid #1AC073;
+    color: #1AC073;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Roboto';
+    padding: 19px 48.5px;
+    border-radius: 10px;
+    margin: 125px 30px 0;
+}
+
+#request-modal-content button:hover{
+    background-color: #1AC073;
+    border: none;
+    color: white;
+}
+
+#close-request-modal{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#request-modal-content h2{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+
