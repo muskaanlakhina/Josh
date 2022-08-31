@@ -6,7 +6,7 @@ body{
     overflow-y: none;
 }
 
-button{
+button a{
     cursor: pointer;
 }
 
@@ -21,7 +21,7 @@ button{
 
 #header{
     background-color: #1AC073;
-    padding: 26px 146px;
+    padding: 26px 120px 0;
 
 }
 
@@ -68,7 +68,7 @@ button{
 #landing{
     display: flex;
     justify-content: space-around;
-    margin-top: 100px;
+    margin-top: 90px;
 }
 
 #hero-display{
@@ -114,6 +114,7 @@ button{
     color: white;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 #cooking{
@@ -365,6 +366,7 @@ button{
 #food-video{
     display: flex;
     justify-content: center;
+    align-items: center;
     
 }
 
@@ -392,7 +394,7 @@ button{
 }
 
 #contact-us{
-    background-color: #FAFAFA;
+    background-color: #F7F8FA;
     display: flex;
     justify-content: space-evenly;
     padding: 100px 130px;
